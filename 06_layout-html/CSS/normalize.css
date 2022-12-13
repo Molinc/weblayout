@@ -126,6 +126,7 @@ legend {
     display: table;
     max-width: 100%;
     padding: 0;
+    /* 3 */
     white-space: normal;
 }
 
@@ -157,7 +158,7 @@ textarea {
     -webkit-appearance: none;
 }
 
-::-webkit-file-upload-button {
+ ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
 }
