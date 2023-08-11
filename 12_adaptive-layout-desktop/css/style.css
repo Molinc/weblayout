@@ -42,9 +42,14 @@
 
 /* common specification */
 
-* {
+html {
     box-sizing: border-box;
 }
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
 
 :root {
     --black-color: #333333;
@@ -61,6 +66,7 @@
 }
 
 body {
+     min-width: 320px;
     font-family: "Montserrat", sans-serif;
      background-color: var(--white-color);
 }
@@ -111,9 +117,9 @@ a {
 
 .container {
     max-width:  1920px;
-    min-width: 320px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 75px;
 }
 
 .visually-hidden {
@@ -207,11 +213,6 @@ a {
     display: none;
 }
 
-.burger {
-    display: none;
-}
-
-
 .search {
     width: 35px;
     height: 35px;
@@ -252,7 +253,7 @@ a {
     height: 100%;
     overflow: hidden;
     background-image: url(../img/hero-bg.jpg);
-    background-position: center;
+    background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 32px;
@@ -307,7 +308,6 @@ a {
 
 .about-content {
     display: flex;
-    grid-template: minmax(32px);
     align-items: center;
 }
 
@@ -440,22 +440,28 @@ a {
 
 .how__content {
     display: flex;
-    align-items: flex-start;
+    gap: 32px;
+}
+
+.how__content::after{
+    content: "";
+    max-width: 870px;
+    width: 100%;
+    background-image: url(../img/work-img-1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    border-radius:  32px;
+
 }
 
 .how-left {
-    width: 50%;
+    max-width: 758px;
+    width: 100%;
     min-height: 471px;
     display: flex;
     flex-direction: column;
-}
-
-.img{
-    width:91%;
-    max-width: 870px;
-    max-height: 460px;
-    border-radius:  32px;
+    margin-top: 0;
 }
 
 .how-left__title {
@@ -467,10 +473,18 @@ a {
 
 .how-left__text {
     margin: 0;
-    margin-bottom: 18px;
     color: var(--black-color);
     max-width: 758px;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 32px;
+}
+
+.how-left__text:nth-child(3){
+     margin-bottom: 18px;
 }
 
 .how-left__btns {
@@ -511,11 +525,14 @@ a {
 }
 
 .questions_list {
-    justify-content: space-between;
+    gap: 32px;
 }
 
 .questions-item{
-    justify-content: space-between;
+    padding: 65px 65px 65px 60px;
+    border: 1px solid var(--dark-grey-color);
+    border-radius: 32px;
+    margin-right: 32px;
 }
 
 .questions__content{
@@ -552,10 +569,7 @@ a {
 .footer__container {
     display: flex;
     align-items: flex-start;
-}
-
-.footer-left {
-    width: 34%;
+    justify-content: space-between;
 }
 
 .footer__logo {
