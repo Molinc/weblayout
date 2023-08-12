@@ -4,40 +4,44 @@
     font-display: swap;
     font-style: normal;
     font-weight: 800;
-    src: url("../fonts/montserrat-extrabold-webfont.woff") format("woff"),
-        url("../fonts/montserrat-extrabold-webfont.woff2") format("woff2");
+    src: url("../fonts/Montserrat-ExtraBold.woff") format("woff"),
+        url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Montserrat";
     font-weight: 700;
     font-display: swap;
     font-style: normal;
-    src: url("../fonts/montserrat-bold-webfont.woff") format("woff"), 
-        url("../fonts/montserrat-bold-webfont.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Bold.woff") format("woff"), 
+        url("../fonts/Montserrat-Bold.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Montserrat";
     font-weight: 600;
     font-display: swap;
     font-style: normal;
-    src: url("../fonts/montserrat-semibold-webfont.woff") format("woff"), 
-        url("../fonts/montserrat-semibold-webfont.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Semibold.woff") format("woff"), 
+        url("../fonts/Montserrat-Semibold.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Montserrat";
-    font-weight: 500;
     font-display: swap;
     font-style: normal;
-    src: url("../fonts/montserrat-medium-webfont.woff") format("woff"), 
-        url("../fonts/montserrat-medium-webfont.woff2") format("woff2");
+    font-weight: 500;
+    src: url("../fonts/Montserrat-Medium.woff") format("woff"),
+        url("../fonts/Montserrat-Medium.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Montserrat";
     font-display: swap;
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/montserrat-regular-webfont.woff") format("woff"),
-        url("../fonts/montserrat-regular-webfont.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Regular.woff") format("woff"),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2");
 }
 
 /* common specification */
@@ -86,6 +90,7 @@ a {
 }
 
 .site-heading {
+    margin:0;
     font-weight: 400;
     font-size: 48px;
     color: var(--black-color);
@@ -133,18 +138,22 @@ a {
 	overflow: hidden;
 }
 
+.main{
+    margin-bottom: 100px;
+}
+
 /* header */
 
 .header {
-    width: 100%;
     background-color: var(--white-color);
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
     border-radius: 0 0 32px 32px;
+    padding:14px 0;
+    min-height: 100px;
 }
 
 .header__container {
-    height: 102px;
     display: flex;
     align-items: center;
 }
@@ -158,6 +167,11 @@ a {
     align-items: center;
 }
 
+.nav{
+    display: flex;
+    margin-right: 85px;
+}
+
 .nav__list {
     display: flex;
     align-items: center;
@@ -168,7 +182,7 @@ a {
 }
 
 .nav__item:last-child {
-    margin-right: 70px;
+    margin-right: 0;
 }
 
 .nav__link {
@@ -214,8 +228,7 @@ a {
 }
 
 .search {
-    width: 35px;
-    height: 35px;
+    padding: 0;
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -260,11 +273,12 @@ a {
 }
 
 .hero-content{
-    padding: 100px 853px 100px 80px;
+    padding: 100px 100px 100px 80px;
 }
 
 
 .hero-content__heading {
+    max-width: 837px;
     font-weight: 800;
     font-size: 70px;
     margin: 0;
@@ -274,6 +288,7 @@ a {
 }
 
 .hero-content__text {
+    max-width: 790px;
     font-weight: 700;
     font-size: 23px;
     margin: 0;
@@ -300,7 +315,7 @@ a {
 
 .about__text {
     margin: 0;
-    margin-bottom: 74px;
+    margin-bottom: 50px;
     max-width: 1235px;
     line-height: 31px;
     color: var(--black-color);
@@ -308,14 +323,13 @@ a {
 
 .about-content {
     display: flex;
-    align-items: center;
 }
 
 .about-content__left {
     margin-right: 32px;
     min-height: 622px;
-    max-height: 668px;
     max-width: 870px;
+    width: 100%;
     display: flex;
     align-items: flex-end;
     background-image: url(../img/about-bg.jpg);
@@ -323,21 +337,21 @@ a {
     background-size: cover;
     background-position: center center;
     border-radius: 32px;
-    margin-right: 32px;
-    padding: 0;
 }
 
 .about-left__inner {
+    width: 100%;
     padding: 50px;
     display: flex;
+    border-radius: 32px;
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 32px;
 }
 
 .about-left__text {
-    margin-right: 86px;
+    margin: 0;
+    max-width: 433px;
     font-weight: 700;
     line-height: 32px;
     color: var(--white-color);
@@ -362,6 +376,7 @@ a {
 
 .about-content__right {
     max-width: 870px;
+    width: 100%;
 }
 
 .about-content__right:last-child {
@@ -369,7 +384,6 @@ a {
 }
 
 .about-right__item {
-    background:transparent;
     padding: 65px 158px 65px 300px;
     border: 1px solid var(--grey-color);
     border-radius:  32px; ;
@@ -379,13 +393,13 @@ a {
 .up{
     background-image: url(../img/about-icon-2.svg);
     background-repeat: no-repeat;
-    background-position: left 55px top 52px;
+    background-position: 65px center;
 }
 
 .bottom{
     background-image: url(../img/about-icon-1.svg);
     background-repeat: no-repeat;
-    background-position: left 55px top 52px;
+    background-position: 65px center;
 }
 
 .about-right__item:first-child {
@@ -395,9 +409,11 @@ a {
 
 .about-right__title {
     margin: 0;
+    margin-bottom: 8px;
     line-height: 30px;
     font-weight: 700;
     font-size: 24px;
+    letter-spacing: -1.5px;
 }
 
 .about-right__text {
@@ -413,6 +429,10 @@ a {
 .how__heading {
     margin: 0;
     margin-bottom: 50px;
+}
+
+.how-title{
+    margin-bottom: 32px;
 }
 
 .how__list {
@@ -466,6 +486,7 @@ a {
 
 .how-left__title {
     margin: 0;
+    margin-bottom: 8px;
     color: var(--black-color);
     font-weight: 700;
     font-size: 24px;
@@ -520,28 +541,30 @@ a {
 /* questions */
 
 .questions {
-    padding-top: 60px;
-    padding-bottom: 102px;
+    margin: 0;
+    padding: 0;
 }
 
-.questions_list {
+.questions-list {
+    display: flex;
     gap: 32px;
+}
+
+.questions__heading{
+    margin-bottom: 32px;
 }
 
 .questions-item{
     padding: 65px 65px 65px 60px;
-    border: 1px solid var(--dark-grey-color);
+    border: 1px solid var(--grey-color);
     border-radius: 32px;
-    margin-right: 32px;
+    
 }
 
-.questions__content{
-    padding: 65px 65px 65px 60px;
-    border: 1px solid var(--dark-grey-color);
-    border-radius: 32px;
-    margin-right: 32px;
-}
+
 .questions__title{
+    margin: 0;
+    margin-bottom: 8px;
     color: var(--000-color);
     font-size: 24px;
     font-style: normal;
@@ -551,6 +574,7 @@ a {
 }
 
 .questions__descr{
+    margin: 0;
     color: #000;
     font-size: 16px;
     font-style: normal;
@@ -568,7 +592,6 @@ a {
 
 .footer__container {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -577,18 +600,9 @@ a {
     margin-bottom: 15px;
 }
 
-.footer-right {
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 14px;
-    display: flex;
-    width: 66%;
-}
-
 .footer__form {
     display: flex;
     flex-direction: column;
-    
 }
 
 .footer__list {
@@ -663,7 +677,8 @@ a {
 }
 
 .footer-wrapper {
-    min-width: 570px;
+    max-width: 570px;
+    width: 100%;
 }
 
 .form__input {
@@ -712,10 +727,23 @@ a {
 .form__area:focus::placeholder, .form__area:hover::placeholder, .form__area:active::placeholder {
     color: var(--white-color);
 }
+.form__inner{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
 
 .form__btn {
-    margin-right: 27px;
     padding: 19px 58px;
+    margin-right: 22px;
+    width: fit-content;
+}
+
+.form__label{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
 }
 
 .checkbox {
@@ -761,8 +789,12 @@ a {
     opacity: 1;
 }
 
+.footer-right{
+    display: flex;
+    align-items: center;
+    max-width: 363px;}
+
 .footer__text {
-    max-width: 363px;
     line-height: 32px;
     color: var(--grey-color);
 }
