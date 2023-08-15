@@ -147,9 +147,9 @@ a {
 .header {
     background-color: var(--white-color);
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     border-radius: 0 0 32px 32px;
-    padding:14px 0;
+   padding: 14px 0;
     min-height: 100px;
 }
 
@@ -177,6 +177,10 @@ a {
     align-items: center;
 }
 
+.nav__item{
+    letter-spacing: -1px;
+}
+
 .nav__item:not(:last-child) {
     margin-right: 85px;
 }
@@ -186,11 +190,15 @@ a {
 }
 
 .nav__link {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 600;
-    font-size: 19px;
-    color: var(--black-color);
+    line-height: normal;
+    color:var(--color-black);
     padding-bottom: 7px;
 }
+
 
 .nav__link::after{
     content:'';
@@ -295,22 +303,25 @@ a {
     margin-bottom: 90px;
     line-height: 29px;
     color: var(--white-color);
+    word-spacing:4px; 
 }
 
 .hero-content__btn {
-    padding: 26px 42px;
+    padding: 25px 33px;
     font-size: 25px;
+    word-spacing:4px; 
+    letter-spacing: -.7px;
 }
 
 /* about */
 
 .about {
-    margin-bottom: 116px;
+    margin-bottom: 100px;
 }
 
 .about__heading {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .about__text {
@@ -358,7 +369,7 @@ a {
 }
 
 .about-left__btn {
-    padding: 18px 41px;
+    padding: 19px 38px;
     font-weight: 700;
     background-color: transparent;
     border: 3px solid var(--orange-color);
@@ -460,7 +471,7 @@ a {
 
 .how__content {
     display: flex;
-    gap: 32px;
+    gap: 144px;
 }
 
 .how__content::after{
@@ -478,10 +489,10 @@ a {
 .how-left {
     max-width: 758px;
     width: 100%;
-    min-height: 471px;
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .how-left__title {
@@ -570,7 +581,6 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 8px;
 }
 
 .questions__descr{
@@ -756,7 +766,6 @@ a {
     position: relative;
     align-items: center;
     cursor: pointer;
-    display: inline-block;
     padding-left: 20px;
     color: var(--grey-color);
 }
