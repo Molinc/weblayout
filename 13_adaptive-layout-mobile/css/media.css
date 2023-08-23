@@ -1,117 +1,169 @@
-@media(max-width: 1780px){
-    .about-content{
-        columns: 1;
-    }
-
-    .about-content__left{
-        margin-bottom: 32px;
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .about-content__right {
-        width: 100%;
-    }
-
-    .questions-list {
-    columns: 1;
-}
-
-.questions-item{
-    margin-bottom: 32px;
-}
-
-.questions-item:last-child{
-    margin-bottom: 0;
-}
-
-}
-
-@media(max-width: 1424px){
-
+@media(max-width:1200px ){
     .container{
         padding: 0 50px;
     }
 
-    .hero-content{
-        padding: 160px 77px;
+    .header{
+        padding: 26px 0;
+        margin-bottom: 40px;
     }
 
-.hero-content__heading{
-    max-width: 770px;
-width: 100%;
+    .header__container{
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    .logo__img{
+        max-width: 150px;
+    }
+    
+    .nav{
+        margin-right: 0;
+    }
+
+    .nav__item:not(:last-child){
+        margin-right: 60px;
+    }
+
+    .hero-content{
+        padding: 160px 77px ;
+    }
+
+    .hero-content__heading{
+        font-size: 60px;
+        max-width: 770px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .hero-content__text{
+        font-size: 20px;
+        max-width: 660px;
+        width: fit-content;
+        margin-bottom: 60px;
+    }
+
+    .hero-content__btn{
+        font-size: 24px;
+    }
+
+
 }
 
-.hero-content__text{
-    max-width: 660px;
+@media(max-width:920px ){
+    .container{
+        padding: 0 50px;
+    }
+
+    .header{
+        padding: 26px 0;
+        margin-bottom: 40px;
+    }
+
+    .header__container{
+        flex-wrap: wrap ;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    .logo__img{
+        max-width: 150px;
+    }
+
+    .nav{
+        margin-right: 0;
+    }
+
+    .nav__item:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .hero-content{
+        padding: 160px 40px;
+    }
+
+    .hero-content__heading{
+        font-size: 50px;
+        max-width: 588px;
+        margin-bottom: 16px;
+    }
+
+    .hero-content__text{
+        font-size: 18px;
+        max-width: 588px;
+        margin-bottom: 60px;
+    }
+
+    .hero-content__btn{
+        font-size: 23px;
+    }
+
+}
+
+@media(max-width:720px ){
+    .container{
+        padding: 0 15px;
+    }
+
+    .header{
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .header__container{
+        flex-wrap: wrap ;
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    .logo__img{
+        max-width: 150px;
+    }
+
+    .nav{
+        order: 3;
+        margin-right: 0;
+        overflow-x: scroll;
+    }
+
+    .nav::-webkit-scrollbar{
+        display: none;
+    }
+
+    .nav__item:not(:last-child){
+        margin-right: 24px;
+    }
+
+    .hero-content{
+    padding: 60px 22px 60px 21px;
+    text-align: center;
     width: 100%;
-    display: -webkit-box;
-   -webkit-line-clamp: 2; 
-           -line-clamp: 2;
-   -webkit-box-orient: vertical;
 }
 
-    .nav__item:not(:last-child) {
-    margin-right: 60px;
-}
-.logo__img{
-    max-width: 150px;
-    width: 100%;
-}
+    .hero-content__heading{
+        font-size: 20px;
+        max-width: 247px;
+        min-height: 69px;
+        margin-bottom: 6px;
+    }
 
-.footer-right{
-    position: absolute !important;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
-}
+    .hero-content__text{
+        font-size: 12px;
+        max-width: 247px;
+        margin-bottom: 60px;
+    }
 
-.how__content{
-    gap: 50px;
-}
-
-.about{
-    margin-bottom: 77px;
-}
-
-.about-text{
-    margin-bottom: 60px;
-}
-
-.header{
-    margin-bottom: 40px;
-}
-
-.hero{
-    margin-bottom: 35px;
-}
-
-.how, .main{
-    margin-bottom: 80px;
-}
-.footer{padding: 50px 0;}
-
-.footer__list{
-    margin-bottom: 90px;
-}
-
-.about__heading{
-    margin-bottom: 20px;
-}
-
-.hero-content__heading{
-    margin-bottom: 16px;
-}
-.hero-content__text{
-    margin-bottom: 60px;
-}
-
-.nav{
-    margin-right: 105px;
-}
+    .hero-content__btn{
+        font-size: 12px;
+    }
 
 }

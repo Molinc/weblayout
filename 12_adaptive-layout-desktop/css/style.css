@@ -113,11 +113,11 @@ a {
 }
 
 .site-btn:focus, .site-btn:hover  {
-    color: var(--FFB84D-color);
+    background-color: var(--FFB84D-color);
 }
 
 .site-btn:active {
-    color: var(--E1670E-color);
+    background-color: var(--E1670E-color);
 }
 
 .container {
@@ -755,6 +755,7 @@ a {
     padding: 0;
     width: fit-content;
 }
+
 
 .checkbox {
     position: absolute;
