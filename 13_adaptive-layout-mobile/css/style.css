@@ -291,7 +291,6 @@ a {
     font-size: 70px;
     margin: 0;
     margin-bottom: 24px;
-    line-height: 86px;
     color: var(--white-color);
 }
 
@@ -301,7 +300,6 @@ a {
     font-size: 23px;
     margin: 0;
     margin-bottom: 90px;
-    line-height: 29px;
     color: var(--white-color);
     word-spacing:4px; 
 }

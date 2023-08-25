@@ -3,6 +3,10 @@
         padding: 0 50px;
     }
 
+    .site-heading{
+        font-size: 48px;
+    }
+
     .header{
         padding: 26px 0;
         margin-bottom: 40px;
@@ -17,7 +21,7 @@
     }
 
     .logo__img{
-        max-width: 150px;
+        max-width: 110px;
     }
     
     .nav{
@@ -51,6 +55,37 @@
         font-size: 24px;
     }
 
+    .about-text, .about-right__item, .about-left__text, .about-left__btn{
+        font-size: 16px;
+    }
+
+    .about__heading{
+        margin-bottom: 20px;
+    }
+
+    .about-text{
+        max-width: 924px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content__left{
+    margin-right: 0;
+    margin-bottom: 32px;
+}
+
+.about-left__btn{
+padding: 19px 38px;
+}
+
+.about-right__item{
+    padding: 65px 155px 65px 317px;
+}
 
 }
 
@@ -84,6 +119,10 @@
         margin-right: 40px;
     }
 
+    .nav__link{
+        font-size: 16px;
+    }
+
     .hero-content{
         padding: 160px 40px;
     }
@@ -104,9 +143,46 @@
         font-size: 23px;
     }
 
+    .about-text, .about-right__item, .about-left__text, .about-left__btn{
+        font-size: 16px;
+    }
+
+    .about-text{
+        max-width: 924px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+.about-content{
+    display: flex;
+    flex-direction: column;
 }
 
-@media(max-width:720px ){
+.about-content__left{
+    margin-right: 0;
+    margin-bottom: 32px;
+}
+
+.about-left__inner{
+    padding: 34px 40px;
+}
+
+.about-left__text{
+    max-width: 366px;
+}
+
+.about-left__btn{
+padding: 19px 38px;
+}
+
+.about-right__item{
+    padding: 65px 155px 65px 317px;
+}
+
+
+}
+
+@media(max-width:700px ){
     .container{
         padding: 0 15px;
     }
@@ -130,6 +206,8 @@
     }
 
     .nav{
+        width:100%;
+        padding-top: 20px;
         order: 3;
         margin-right: 0;
         overflow-x: scroll;
@@ -151,19 +229,19 @@
 
     .hero-content__heading{
         font-size: 20px;
-        max-width: 247px;
-        min-height: 69px;
+        max-width: 100%;
         margin-bottom: 6px;
     }
 
     .hero-content__text{
         font-size: 12px;
-        max-width: 247px;
-        margin-bottom: 60px;
+        max-width: 100%;
+        margin-bottom: 32px;
     }
 
     .hero-content__btn{
         font-size: 12px;
+        padding: 13px 28px;
     }
 
 }
