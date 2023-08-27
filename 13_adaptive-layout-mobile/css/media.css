@@ -9,6 +9,19 @@
         padding: 195px 30px 30px;
         background-position:  30px 30px;
     }
+
+    .footer-left, .footer-center{
+        margin-right: 20px;
+    }
+
+}
+
+@media(max-width:1400px ){
+
+    .footer-right{
+	display: none;
+}
+
 }
 
 @media(max-width:1200px ){
@@ -93,7 +106,6 @@
 }
 
 .about-content__left{
-    max-width: 1200px;
     width: 100%;
     margin-right: 0;
     margin-bottom: 32px;
@@ -115,6 +127,10 @@ padding: 19px 38px;
     background-position: 65px center;
 }
 
+.how{
+margin-bottom: 80px;
+}
+
 .how__container{
     max-width: 1200px;
     width: 100%;
@@ -122,8 +138,7 @@ padding: 19px 38px;
 }
 
 .how__content{
-    max-width: 1200px;
-    width: 100%;
+    max-width: 100%;
     gap: 50px;
 }
 
@@ -148,17 +163,6 @@ padding: 19px 38px;
 .questions-list{
     display: flex;
     flex-direction: column;
-}
-
-.footer-right{
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
 }
 
 }
@@ -255,27 +259,23 @@ padding: 19px 38px;
     background-position: 40px center;
 }
 
+.how{
+margin-bottom: 80px;
+}
+
 .how__container{
     max-width: 1200px;
     width: 100%;
-    justify-content: none;
+    gap: 38px;
 }
 
 .how__content{
-    max-width: 1200px;
-    width: 100%;
-    flex-direction: column;
+    max-width: 100%;
+    flex-direction: column-reverse;
 }
 
-.how__content::before{
-    content: "";
-    width: 100%;
+.how__content::after{
     min-height: 284px;
-    background-image: url(../img/work-img-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:  center;
-    border-radius:  32px;
 }
 
 .how-left__text:nth-child(3) {
@@ -466,10 +466,16 @@ padding: 19px 38px;
     background-image: url("../img/about-icon-1.svg");
 }
 
-.how__content::before{
+.how{
+margin-bottom: 60px;
+}
+
+.how__content::after{
     min-height: 160px;
 }
+
 .how__content{
+    max-width: 100%;
     gap: 16px;
 }
 
@@ -523,11 +529,22 @@ padding: 19px 38px;
     width: 100%;
 }
 
+.footer-wrapper{
+    border-bottom: 1px solid var(--dark-grey-color);
+}
+
+.footer__form{
+    display: flex;
+    align-items: center;
+}
+
 .form__inner{
     flex-direction: column;
     padding-bottom: 25px;
-    border-bottom: 1px solid var(--black-color);
-    margin-bottom: 16px;
+}
+
+.form__input, .form__area{
+    width: 100%;
 }
 
 .form__btn{

@@ -426,7 +426,7 @@ a {
 
 /* how */
 .how{
-    margin-bottom: 15px;
+    margin-bottom: 100px;
 }
 
 .how__heading {
@@ -463,11 +463,10 @@ a {
 
 .how__content {
     display: flex;
-    gap: 144px;
-    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
-.how__content::before{
+.how__content::after{
     content: "";
     max-width: 870px;
     width: 100%;
@@ -485,6 +484,7 @@ a {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    margin-right: 20px;
 }
 
 .how-left__title {
@@ -681,6 +681,7 @@ a {
 .footer-wrapper {
     max-width: 570px;
     width: 100%;
+    margin-right: 20px;
 }
 
 .form__input {
