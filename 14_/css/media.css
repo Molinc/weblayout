@@ -51,7 +51,7 @@
     }
 
     .logo__img{
-        max-width: 150px;
+        max-width: 110px;
     }
     
     .nav{
@@ -75,11 +75,10 @@
     }
 
     .hero-content__text{
-        max-width: 660px;
         font-size: 20px;
+        max-width: 660px;
         width: fit-content;
         margin-bottom: 60px;
-        word-spacing: 0;
     }
 
     .hero-content__btn{
@@ -103,6 +102,7 @@
 .about-content{
     display: flex;
     flex-direction: column;
+    
 }
 
 .about-content__left{
@@ -127,10 +127,6 @@ padding: 19px 38px;
     background-position: 65px center;
 }
 
-.about-right__title{
-    min-width: 452px;
-}
-
 .how{
 margin-bottom: 80px;
 }
@@ -146,15 +142,6 @@ margin-bottom: 80px;
     gap: 50px;
 }
 
-.how__content::after{
-    min-height: 689px;
-}
-
-.how-left{
-    max-width: 437px;
-    width: 100%;
-}
-
 .how-left__text:nth-child(3) {
     margin-bottom: 25px;
 }
@@ -167,8 +154,6 @@ margin-bottom: 80px;
 }
 
 .how-left__text{
-    min-width: 437px;
-    width: 100%;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -201,7 +186,7 @@ margin-bottom: 80px;
     }
 
     .logo__img{
-        max-width: 110px;
+        max-width: 150px;
     }
 
     .nav{
@@ -274,10 +259,6 @@ padding: 19px 38px;
     background-position: 40px center;
 }
 
-.about-right__title{
-    min-width: 452px;
-}
-
 .how{
 margin-bottom: 80px;
 }
@@ -309,8 +290,6 @@ margin-bottom: 80px;
 }
 
 .how-left__text{
-    min-width: 667px;
-    width: 100%;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -374,7 +353,7 @@ margin-bottom: 80px;
     }
 
     .logo__img{
-        max-width: 110px;
+        max-width: 150px;
     }
 
     .nav{
@@ -456,7 +435,6 @@ margin-bottom: 80px;
     color: var(--000-color);
 }
 
-
 .about-left__btn{
     color: var(--orange-color);
 }
@@ -470,7 +448,6 @@ margin-bottom: 80px;
 }
 
 .about-right__title{
-    min-width: 290px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -502,10 +479,6 @@ margin-bottom: 60px;
     gap: 16px;
 }
 
-.how-left{
-    margin-right: 0;
-}
-
 .how-left__text:nth-child(3) {
     margin-bottom: 24px;
 }
@@ -518,15 +491,10 @@ margin-bottom: 60px;
 }
 
 .how-left__text{
-    min-width: 290px;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-}
-
-.how-left__btn:first-child{
-    margin-right: 10px;
 }
 
 .how-left__btn{
@@ -534,7 +502,6 @@ margin-bottom: 60px;
     font-style: normal;
     font-weight: 400;
 }
-
 
 .questions__title{
     font-size: 18px;
@@ -555,7 +522,6 @@ margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 0;
 }
 
 .bottom-logo{
