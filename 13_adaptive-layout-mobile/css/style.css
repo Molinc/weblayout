@@ -328,8 +328,6 @@ a {
 
 .about-content__left {
     margin-right: 32px;
-    min-height: 622px;
-    height: 90%;
     max-width: 870px;
     width: 100%;
     display: flex;
@@ -464,8 +462,6 @@ a {
     content: "";
     max-width: 870px;
     width: 100%;
-    min-height: 460px;
-    height: 100%;
     background-image: url(../img/work-img-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -494,7 +490,7 @@ a {
 }
 
 .how-left__text {
-    min-width: 646px;
+    max-width: 646px;
     width: 100%;
     margin: 0;
     color: var(--black-color);
@@ -502,6 +498,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    margin-right: 20px;
 }
 
 .how-left__text:nth-child(3){
@@ -750,7 +747,6 @@ a {
     width: fit-content;
 }
 
-
 .checkbox {
     position: absolute;
     opacity: 0;
@@ -796,7 +792,8 @@ a {
 .footer-right{
     display: flex;
     align-items: center;
-    max-width: 363px;}
+    max-width: 363px;
+}
 
 .footer__text {
     line-height: 32px;

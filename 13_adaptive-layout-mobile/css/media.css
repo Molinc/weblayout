@@ -1,5 +1,10 @@
 @media(max-width:1600px ){
 
+    .logo{
+        margin: 0;
+        margin-right: auto;
+    }
+
     .about-left__inner{
         flex-wrap: wrap;
     }
@@ -175,11 +180,6 @@ margin-bottom: 80px;
     line-height: 32px;
 }
 
-.questions-list{
-    display: flex;
-    flex-direction: column;
-}
-
 }
 
 @media(max-width:920px ){
@@ -322,6 +322,7 @@ margin-bottom: 80px;
 }
 
 .footer-wrapper{
+    margin-right: 0;
     margin-bottom: 50px;
 }
 
@@ -342,6 +343,14 @@ margin-bottom: 80px;
     margin: 0;
 }
 
+.questions-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input, .form__area{
+    max-width: 100%;
+}
 
 }
 
