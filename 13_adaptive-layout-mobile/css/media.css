@@ -1,4 +1,4 @@
-@media(max-width:1600px ){
+@media(max-width:1600px){
 
     .logo{
         margin: 0;
@@ -178,6 +178,10 @@ margin-bottom: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+}
+
+.questions__title{
+    max-width: 100%;
 }
 
 }
