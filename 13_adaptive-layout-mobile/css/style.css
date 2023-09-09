@@ -158,7 +158,7 @@ a {
 }
 
 .header__logo{
-    margin-right: 823px;
+    margin-right: auto;
 }
 
 .header__inner {
@@ -403,7 +403,6 @@ a {
 .about-right__title {
     margin: 0;
     margin-bottom: 8px;
-    line-height: 30px;
     font-weight: 700;
     font-size: 24px;
 }
