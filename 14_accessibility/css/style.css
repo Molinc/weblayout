@@ -167,7 +167,7 @@ a {
     align-items: center;
 }
 
-.nav{
+.nav-header{
     display: flex;
     margin-right: 85px;
 }
@@ -190,7 +190,6 @@ a {
 }
 
 .nav__link {
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -607,7 +606,7 @@ a {
     flex-direction: column;
 }
 
-.footer__list {
+.nav-footer {
     margin-bottom: 113px;
 }
 

@@ -54,7 +54,7 @@
         max-width: 110px;
     }
     
-    .nav{
+    .nav-header{
         margin-right: 0;
     }
 
@@ -189,7 +189,7 @@ margin-bottom: 80px;
         max-width: 150px;
     }
 
-    .nav{
+    .nav-header{
         margin-right: 0;
     }
 
@@ -309,7 +309,7 @@ margin-bottom: 80px;
     width: 100%;
 }
 
-.footer__list{
+.nav-footer{
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
@@ -356,11 +356,11 @@ margin-bottom: 80px;
         max-width: 150px;
     }
 
-    .nav{
+    .nav-header{
         width:100%;
         padding-top: 20px;
-        order: 3;
         margin-right: 0;
+        order: 3;
         overflow-x: scroll;
     }
 
