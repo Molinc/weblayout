@@ -167,7 +167,7 @@ a {
     align-items: center;
 }
 
-.nav{
+.nav-header{
     display: flex;
     margin-right: 85px;
 }
@@ -190,7 +190,6 @@ a {
 }
 
 .nav__link {
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -291,7 +290,6 @@ a {
     font-size: 70px;
     margin: 0;
     margin-bottom: 24px;
-    line-height: 86px;
     color: var(--white-color);
 }
 
@@ -301,7 +299,6 @@ a {
     font-size: 23px;
     margin: 0;
     margin-bottom: 90px;
-    line-height: 29px;
     color: var(--white-color);
     word-spacing:4px; 
 }
@@ -362,6 +359,7 @@ a {
 
 .about-left__text {
     margin: 0;
+    margin-bottom: 15px;
     max-width: 433px;
     font-weight: 700;
     line-height: 32px;
@@ -390,31 +388,24 @@ a {
     width: 100%;
 }
 
-.about-content__right:last-child {
-    margin-bottom: 0;
-}
-
 .about-right__item {
     padding: 65px 158px 65px 300px;
     border: 1px solid var(--grey-color);
     border-radius:  32px; ;
     color: var(--black-color);
+    background-repeat: no-repeat;
+    background-position: 65px center;
 }
 
 .up{
-    background-image: url(../img/about-icon-2.svg);
-    background-repeat: no-repeat;
-    background-position: 65px center;
+    background-image: url("../img/about-icon-2.svg");
 }
 
 .bottom{
-    background-image: url(../img/about-icon-1.svg);
-    background-repeat: no-repeat;
-    background-position: 65px center;
+    background-image: url("../img/about-icon-1.svg");
 }
 
 .about-right__item:first-child {
-    background-position: left 50px top 71px;
     margin-bottom: 32px;
 }
 
@@ -434,7 +425,7 @@ a {
 
 /* how */
 .how{
-    margin-bottom: 15px;
+    margin-bottom: 100px;
 }
 
 .how__heading {
@@ -471,7 +462,7 @@ a {
 
 .how__content {
     display: flex;
-    gap: 144px;
+    justify-content: space-between;
 }
 
 .how__content::after{
@@ -483,7 +474,6 @@ a {
     background-size: cover;
     background-position:  center;
     border-radius:  32px;
-
 }
 
 .how-left {
@@ -493,6 +483,7 @@ a {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    margin-right: 20px;
 }
 
 .how-left__title {
@@ -557,8 +548,8 @@ a {
 }
 
 .questions-list {
-    display: flex;
-    gap: 32px;
+    columns: 3;
+    gap:32px;
 }
 
 .questions__heading{
@@ -615,7 +606,7 @@ a {
     flex-direction: column;
 }
 
-.footer__list {
+.nav-footer {
     margin-bottom: 113px;
 }
 
@@ -689,6 +680,7 @@ a {
 .footer-wrapper {
     max-width: 570px;
     width: 100%;
+    margin-right: 20px;
 }
 
 .form__input {
@@ -755,7 +747,6 @@ a {
     padding: 0;
     width: fit-content;
 }
-
 
 .checkbox {
     position: absolute;
