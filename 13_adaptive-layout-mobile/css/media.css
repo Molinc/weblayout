@@ -117,7 +117,7 @@
 }
 
 .about-content__left{
-    width: 100%;
+    max-width: 100%;
     min-height: 640px;
     margin-right: 0;
     margin-bottom: 32px;
@@ -163,8 +163,9 @@ margin-bottom: 80px;
 }
 
 .how-left{
-    max-width: 437px;
+    max-width: 100%;
     width: 100%;
+    margin-right: 0;
 }
 
 .how-left__text:nth-child(3) {
@@ -271,7 +272,7 @@ margin-bottom: 80px;
 
 .about-content__left{
     min-height: 650px;
-    max-width: 100%;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 32px;
 }
